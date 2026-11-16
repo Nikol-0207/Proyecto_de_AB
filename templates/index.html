@@ -23,18 +23,20 @@
        <select name="notacion" id="notacion">
         <option value="1">Infijo</option>
         <option value="2">Postfijo</option>
-        <option value="3">Sufijo</option>
+        <option value="3">Prefijo</option>
        </select>
        <section class="calculo-exp">
-              <button>Calcular</button>
-              <input type="text" placeholder="Escribe la expresión...">
+              <button id="btn-calcular" type="button">Calcular</button>
+              <input type="text" id="input-expresion" placeholder="Escribe la expresión...">
               <label for="result-exp">Resultados:</label>
-              <input type="text" name="result-exp">
+              <input type="text" name="result-exp" id="result-exp" readonly>
         </section>
-         <button id="show-tree">Mostrar Árbol</button>
-          <button>InOrden</button>
-          <button>PreOrden</button>
-          <button>PostOrden</button>
+         <button id="show-tree" type="button">Mostrar Árbol</button>
+          <button id="exp-inorden" type="button">InOrden</button>
+          <button id="exp-preorden" type="button">PreOrden</button>
+          <button id="exp-postorden" type="button">PostOrden</button>
+          <label for="result-exp-rec">Resultado R.: </label>
+          <input type="text" name="result-exp-rec" id="result-exp-rec" readonly>
     </section>
     <section class="panel columna-metodos">
         <h1>Métodos de Árbol Binarios</h1>
@@ -48,9 +50,11 @@
         </div>
          <label for="Busqueda">Buscar:</label>
          <input type="text" name="Busqueda">
-        <button>InOrden</button>
-          <button>PreOrden</button>
-          <button>PostOrden</button>
+       <button id="btn-inorden" type="button">InOrden</button>
+        <button id="btn-preorden" type="button">PreOrden</button>
+        <button id="btn-postorden" type="button">PostOrden</button>
+          <label for="Recorrido">Resultado R.: </label>
+          <input type="text" name="Recorrido" id="result-record">
         </section>
         </div>  
         <section class="area-visualizador">
